@@ -1,0 +1,9 @@
+ - task: Snyk@2
+      inputs:
+        multiFile: true
+        files: '**/obj/project.assets.json'
+        test: true
+        authType: 'endpoint'
+        endpoint: 'GDBC2019-Snyk'
+        failBuild: true
+        org: 'global-devops-bootcamp'
